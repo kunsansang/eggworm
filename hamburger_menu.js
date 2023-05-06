@@ -30,7 +30,7 @@
 
     animation-name: fadeIn;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
   }
 
@@ -104,23 +104,62 @@
     transform: translateY(-4px);
   }
   `;
+  const overlayMenuStyle = ``;
   const styleElm = document.createElement("style");
-  styleElm.textContent = hamburgerStyle;
+  styleElm.textContent = hamburgerStyle + overlayMenuStyle;
   document.head.appendChild(styleElm);
 
-  // component
-  const hamburgerWrapper = document.createElement( "div" );
-  hamburgerWrapper.classList.add( "hamburger-button" );
-  hamburgerWrapper.id = "hamburgerMenu";
-  hamburgerWrapper.innerHTML = `
+  // menu component
+  const hamburgerMenuICon = document.createElement( "div" );
+  hamburgerMenuICon.classList.add( "hamburger-button" );
+  hamburgerMenuICon.id = "hamburgerMenu";
+  hamburgerMenuICon.innerHTML = `
   <span></span>
   <span></span>
   `;
-  // document.querySelector(".header-nav-list")[0].appendChild(hamburgerWrapper);
-  document.body.appendChild( hamburgerWrapper );
+  // document.querySelector(".header-nav-list")[0].appendChild(hamburgerMenuICon);
+  document.body.appendChild( hamburgerMenuICon );
+
+  // overlay component
+  const overlayMenu = document.createElement( "div" );
+  overlayMenu.classList.add( "menu-wrapper" );
+  overlayMenu.innerHTML = `
+    <div class="menu-overlay"></div>
+    <div class="menu">
+      <div class="menu-bg"></div>
+      <div class="menu-inner">
+        <div class="menu-logo"></div>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a href="/" class="">WHO WE ARE</a>
+          </li>
+          <li class="footer-menu__item ">
+            <a href="/" class="">OUR SERVICES</a>
+          </li>
+          <li class="footer-menu__item ">
+            <a href="/" class="">WORKS</a>
+          </li>
+          <li class="footer-menu__item ">
+            <a href="/" class="">NEWS</a>
+          </li>
+        </ul>
+        <div class="footer__sns"><a href="https://twitter.com" target="_blank" title="TWITTER" class="footer-twitter-link">TWITTER</a></div>
+        <div class="footer__copyright">© <span class="footer__year">2023</span> Eggworm inc. All Rights Reserved.</div>
+      </div>
+    </div>
+  `
+  document.body.appendChild( overlayMenu );
 
   // logic
-  hamburgerWrapper.addEventListener( 'click', function () {
-  this.classList.toggle( 'active' );
+  hamburgerMenuICon.addEventListener( 'click', function () {
+    this.classList.toggle( 'active' );
+
+    const menuOverlay = document.querySelector(".menu-overlay");
+    menuOverlay.classList.toggle( 'active' );
+    menuOverlay.classList.toggle( 'motion' );
+
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle( 'active' );
+    menu.classList.toggle( 'motion' );
   });
 })();
