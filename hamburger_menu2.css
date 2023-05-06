@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
-
+/* /*
 html {
   height: 100%;
   min-height: 100vh
@@ -15,7 +15,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #fff;
+  background-color: #333;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif
 }
@@ -5259,7 +5259,7 @@ html.ie .home-news-list .news-item__text::selection {
   -webkit-transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
-}
+} */
 
 .error {
   background-color: #fff;
@@ -8958,7 +8958,7 @@ html.ie .home-news-list .news-item__text::selection {
       line-height: 4.8vw;
       margin: -1.6vw 0vw 5.06667vw 0vw
   }
-}
+} */
 
 .menu-button {
   width: 38px;
@@ -9386,7 +9386,7 @@ html.ie .menu-button span,html.edge .menu-button span {
   }
 }
 
-.contact {
+/* .contact {
   background-color: #fff;
   padding: 190px 0 0
 }
@@ -10471,4 +10471,4 @@ input[type="checkbox"]:checked+.security-check-label span:before {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px)
-}
+} */
