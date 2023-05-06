@@ -6,5 +6,5 @@
   const topScroll = document.createElement( "div" );
   topScroll.classList.add( "top-scroll" );
   const firstSection = document.querySelector("section");
-  document.body.appendChild( topScroll );
+  firstSection.appendChild( topScroll );
 })();
