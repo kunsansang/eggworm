@@ -1,7 +1,7 @@
 (function () {
   // styling
   const hamburgerStyle = `
-  .hamburbur-button {
+  .hamburger-button {
     width: 38px;
     height: 38px;
     padding: 13px 0;
@@ -34,11 +34,11 @@
     animation-fill-mode: forwards;
   }
 
-  .hamburbur-button span {
+  .hamburger-button span {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #000;
+    background-color: #fff;
     margin-bottom: 8px;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -66,39 +66,39 @@
   }
 
   @media (min-width: 769px) {
-    .hamburbur-button:hover span:nth-of-type(1) {
+    .hamburger-button:hover span:nth-of-type(1) {
       -webkit-transform: translateX(-5px);
       -ms-transform: translateX(-5px);
       transform: translateX(-5px);
     }
 
-    .hamburbur-button.active:hover span:nth-of-type(1) {
+    .hamburger-button.active:hover span:nth-of-type(1) {
       -webkit-transform: translateY(5px) rotate(45deg);
       -ms-transform: translateY(5px) rotate(45deg);
       transform: translateY(5px) rotate(45deg);
     }
 
-    .hamburbur-button.active:hover span:nth-of-type(2) {
+    .hamburger-button.active:hover span:nth-of-type(2) {
       -webkit-transform: translateY(-5px) rotate(-45deg);
       -ms-transform: translateY(-5px) rotate(-45deg);
       transform: translateY(-5px) rotate(-45deg);
     }
 
 
-    .hamburbur-button:hover span:nth-of-type(2) {
+    .hamburger-button:hover span:nth-of-type(2) {
       -webkit-transform: translateX(5px);
       -ms-transform: translateX(5px);
       transform: translateX(5px);
     }
   }
 
-  .hamburbur-button.active span:nth-of-type(1) {
+  .hamburger-button.active span:nth-of-type(1) {
     -webkit-transform: translateY(5px);
     -ms-transform: translateY(5px);
     transform: translateY(5px);
   }
 
-  .hamburbur-button.active span:nth-of-type(2) {
+  .hamburger-button.active span:nth-of-type(2) {
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
@@ -110,7 +110,7 @@
 
   // component
   const hamburgerWrapper = document.createElement( "div" );
-  hamburgerWrapper.classList.add( "hamburbur-button" );
+  hamburgerWrapper.classList.add( "hamburger-button" );
   hamburgerWrapper.id = "hamburgerMenu";
   hamburgerWrapper.innerHTML = `
   <span></span>
