@@ -30,7 +30,7 @@
 
     animation-name: fadeIn;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
@@ -117,7 +117,6 @@
   <span></span>
   <span></span>
   `;
-  // document.querySelector(".header-nav-list")[0].appendChild(hamburgerMenuICon);
   document.body.appendChild( hamburgerMenuICon );
 
   // overlay component

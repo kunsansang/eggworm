@@ -1,0 +1,113 @@
+@-webkit-keyframes top-scroll-animation {
+  0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
+  }
+
+  20% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%)
+  }
+
+  30% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%)
+  }
+
+  50% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+}
+
+@keyframes top-scroll-animation {
+  0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%)
+  }
+
+  20% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%)
+  }
+
+  30% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%)
+  }
+
+  50% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+
+  100% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%)
+  }
+}
+
+.top-scroll {
+  width: 2px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  background-color: #dddddd;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: opacity 0.5s linear,-webkit-transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.5s linear,-webkit-transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: opacity 0.5s linear,transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.5s linear,transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.5s linear,transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),-webkit-transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+@media (max-width: 768px) {
+  .top-scroll {
+      height:50px;
+      right: 6.93333vw
+  }
+}
+
+.top-scroll:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000
+}
+
+@media (max-width: 768px) {
+  .top-scroll:before {
+      height:50px
+  }
+}
+
+.is-fv-finish .top-menu__item {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px)
+}
+
+.is-fv-finish .top-scroll {
+  opacity: 1
+}
+
+.is-fv-finish .top-scroll:before {
+  -webkit-animation: 2s ease-out 0s infinite top-scroll-animation;
+  animation: 2s ease-out 0s infinite top-scroll-animation
+}
