@@ -162,5 +162,4 @@
     menu.classList.toggle( 'active' );
     menu.classList.toggle( 'motion' );
   });
-
 })();
