@@ -693,27 +693,7 @@ html.is-ipad .footer-inner {
   transform: translateY(0px) translateZ(0px) !important
 }
 
-.footer__inner {
-  padding: 200px 80px 0
-}
 
-.footer__inner:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-@media (max-width: 1440px) {
-  .footer__inner {
-      padding-top:13.88889vw
-  }
-}
-
-@media (max-width: 768px) {
-  .footer__inner {
-      padding:45.33333vw 4.66667vw 20.93333vw 4.66667vw
-  }
-}
 
 
 .main-title {

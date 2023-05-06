@@ -125,8 +125,8 @@
   overlayMenu.innerHTML = `
     <div class="menu-overlay"></div>
     <div class="menu">
-      <div class="menu-bg"></div>
-      <div class="menu-inner">
+    <div class="menu-inner">
+        <div class="menu-bg"></div>
         <div class="menu-logo"></div>
         <ul class="footer-menu">
           <li class="footer-menu__item">
