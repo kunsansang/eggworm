@@ -101,7 +101,7 @@
       this.burger.appendChild(burgerSVGTemplate.content.cloneNode(true));
       this.burgerToggle = this.shadowRoot.querySelector('.burgerToggle');
       this.burger.addEventListener('click', function () {
-        console.log('the burger has been clicked');
+        console.log('the burger has been clicked!');
         self.classList.toggle('is-open');
 
         if (self.animationCount === 0) {
