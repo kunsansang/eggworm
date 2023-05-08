@@ -1,5 +1,5 @@
-(function () {
-	const reelSection = document.createElement("section");
+document.addEventListener("DOMContentLoaded", function(event){
+  const reelSection = document.createElement("section");
 	reelSection.id = "gl-statement";
 	reelSection.innerHTML = `
   <div class="gl-state-copyset">
@@ -160,4 +160,4 @@
 
 	// init running
 	startMoving();
-})();
+});
