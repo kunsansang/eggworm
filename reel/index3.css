@@ -55,19 +55,19 @@
 
 @media (min-width: 769px) {
   #gl-statement {
-    padding: 6vw 8vw 6vw 8vw;
+    padding: 6vw 12vw 6vw 12vw;
   }
 }
 
 @media (min-width: 1440px) {
   #gl-statement {
-    padding: 245px 0 235px 41%
+    padding: 245px 10% 235px 36%;
   }
 }
 
 @media (max-width: 768px) {
   #gl-statement {
-    padding: 0 8vw 0 8vw;
+    padding: 6vw 8vw 6vw 8vw;
   }
 }
 
