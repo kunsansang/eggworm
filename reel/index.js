@@ -45,7 +45,8 @@
         </p>
       </div>
   `;
-	document.body.appendChild(reelSection);
+	const ndSection = document.querySelectorAll(selectors)('section')[1];
+	ndSection.appendChild(reelSection);
 
 	// variables
 	const imgs = document.querySelectorAll(".gl-state-copy");
