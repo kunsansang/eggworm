@@ -1,52 +1,45 @@
-document.addEventListener("DOMContentLoaded", function(event){
-  const reelSection = document.createElement("section");
+document.addEventListener("DOMContentLoaded", function (event) {
+	const reelSection = document.createElement("section");
 	reelSection.id = "gl-statement";
 	reelSection.innerHTML = `
-  <div class="gl-state-copyset">
+		<div class="gl-state-copyset">
         <div class="gl-state-copy">
-					          <img src="	https://goinc.co.jp/assets/gl/image/state_bg_line.svg" width="5236px" height="auto" alt="">
+          <img src="	https://goinc.co.jp/assets/gl/image/state_bg_line.svg" width="5236px" height="auto" alt="">
         </div>
-
       </div>
       <div class="gl-state-copyset">
         <div class="gl-state-copy">
-					          <img src="https://goinc.co.jp/assets/gl/image/state_bg.svg" width="5236px" height="auto" alt="">
+          <img src="https://goinc.co.jp/assets/gl/image/state_bg.svg" width="5236px" height="auto" alt="">
         </div>
       </div>
       <div class="gl-state-white" style="opacity: 1; transform: translate(0%, 101%) matrix(1, 0, 0, 1, 0, 0);"></div>
       <div class="gl-statement-txt">
-        <p class="gl-state-intxt">
-          <span class="gl-state-line">
-            Hello, we’re EGGWORM.
-          </span>
+        <p class="gl-state-intxt"><span class="gl-state-line">
+            <span>Hello, we’re EGGWORM.</span>
         </p>
-        <p class="gl-state-intxt">
-          <span class="gl-state-line">
-            As a results-driven brand experience company, we create empowering encounters
-            that invigorate our partners' brand narratives.
-          </span>
+        <p class="gl-state-intxt"><span class="gl-state-line">
+            <span>As a results-driven brand experience company, we create empowering encounters that invigorate our
+              partners' brand narratives.
+            </span>
         </p>
-        <p class="gl-state-intxt">
-          <span class="gl-state-line">
-            These dynamic experiences encompass the physical, digital, and the seamless
-            fusion of both realms in today's ever-evolving world. We're dedicated to helping
-            our partners adapt and flourish in the face of change. Change presents both
-            challenges and opportunities for businesses, and it all begins with a visionary idea -
-            one that we're committed to nurturing from the very beginning until it becomes a
-            reality.
-          </span>
+        <p class="gl-state-intxt"><span class="gl-state-line">
+            <span>These dynamic experiences encompass the physical, digital, and the seamless
+              fusion of both realms in today's ever-evolving world. We're dedicated to helping
+              our partners adapt and flourish in the face of change. Change presents both
+              challenges and opportunities for businesses, and it all begins with a visionary idea -
+              one that we're committed to nurturing from the very beginning until it becomes a
+              reality.
+            </span>
         </p>
-        <p class="gl-state-intxt">
-          <span class="gl-state-line">
-            Navigating the Japanese market can be a daunting endeavor, but at EGGWORM,
-            we embrace challenges as opportunities and take pride in turning the seemingly
-            impossible into reality.
-          </span>
+        <p class="gl-state-intxt"><span class="gl-state-line">
+            <span>Navigating the Japanese market can be a daunting endeavor, but at EGGWORM,
+              we embrace challenges as opportunities and take pride in turning the seemingly
+              impossible into reality.
+            </span>
         </p>
       </div>
   `;
-	const ndSection = document.querySelectorAll('section')[1];
-	ndSection.appendChild(reelSection);
+	document.body.appendChild(reelSection);
 
 	// variables
 	const imgs = document.querySelectorAll(".gl-state-copy");
@@ -60,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function(event){
 	const defaultSpeed = 1; // 0.5 -> 5
 	let currentSpeedImg = 0.8;
 	let delayX = 0; // 0 - 40
-	let movementInterval;
 
 	// main functions
 	function movementFrame() {
@@ -109,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 	})();
 
 	function startMoving() {
-		movementInterval = setInterval(movementFrame, defaultFrame);
+		setInterval(movementFrame, defaultFrame);
 	}
 
 	function mapValue(oldValue, oldMin, oldMax, newMin, newMax) {

@@ -16,8 +16,8 @@
 
 @media (min-width: 769px) {
   #gl-statement p {
-    font-size: 1.73611vw;
-    line-height: 3.125vw
+    font-size: 2.3vw;
+    line-height: 4.6vw;
   }
 }
 
@@ -55,8 +55,7 @@
 
 @media (min-width: 769px) {
   #gl-statement {
-    padding: 17.01389vw 0vw 16.31944vw 0vw;
-    padding-left: 41%
+    padding: 6vw 8vw 6vw 8vw;
   }
 }
 
@@ -68,7 +67,7 @@
 
 @media (max-width: 768px) {
   #gl-statement {
-    padding: 29.33333vw 0vw 29.33333vw 4.66667vw
+    padding: 0 8vw 0 8vw;
   }
 }
 
@@ -167,17 +166,4 @@ span.gl-state-line {
   display: block;
   /*overflow-y:hidden;*/
   margin: 0;
-}
-
-@media (min-width: 769px) {
-  .gl-statement-txt {
-    padding: 17.01389vw 0vw 16.31944vw 0vw;
-    padding-left: 41%;
-  }
-}
-
-@media (max-width: 768px) {
-  .gl-statement-txt {
-    padding: 29.33333vw 0vw 29.33333vw 4.66667vw;
-  }
 }
