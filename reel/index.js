@@ -4,13 +4,13 @@
 	reelSection.innerHTML = `
   <div class="gl-state-copyset">
         <div class="gl-state-copy">
-          <img src="	https://goinc.co.jp/assets/gl/image/state_bg_line.svg" width="5236px" height="auto" alt="">
+          <img src="./reel/a.svg" height="auto" alt="">
         </div>
 
       </div>
       <div class="gl-state-copyset">
         <div class="gl-state-copy">
-          <img src="https://goinc.co.jp/assets/gl/image/state_bg.svg" width="5236px" height="auto" alt="">
+          <img src="./reel/b.svg" height="auto" alt="">
         </div>
       </div>
       <div class="gl-state-white" style="opacity: 1; transform: translate(0%, 101%) matrix(1, 0, 0, 1, 0, 0);"></div>
