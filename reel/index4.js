@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	reelSection.innerHTML = `
 		<div class="gl-state-copyset">
         <div class="gl-state-copy">
-          <img src="https://raw.githubusercontent.com/kunsansang/eggworm/main/reel/eggwormLine.svg" width="5236px" height="auto" alt="">
+          <img src="https://raw.githubusercontent.com/kunsansang/eggworm/main/reel/eggwormLine.svg" alt="logo">
         </div>
       </div>
       <div class="gl-state-copyset">
         <div class="gl-state-copy">
-          <img src="https://raw.githubusercontent.com/kunsansang/eggworm/main/reel/eggworm.svg" width="5236px" height="auto" alt="">
+          <img src="https://raw.githubusercontent.com/kunsansang/eggworm/main/reel/eggworm.svg" alt="logo">
         </div>
       </div>
       <div class="gl-state-white" style="opacity: 1; transform: translate(0%, 101%) matrix(1, 0, 0, 1, 0, 0);"></div>
