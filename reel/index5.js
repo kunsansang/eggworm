@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           <img src="https://raw.githubusercontent.com/kunsansang/eggworm/main/reel/eggworm.svg" alt="logo">
         </div>
       </div>
-      <div class="gl-state-white" style="opacity: 1; transform: translate(0%, 101%) matrix(1, 0, 0, 1, 0, 0);"></div>
+      <div class="gl-state-white"></div>
       <div class="gl-statement-txt">
         <p class="gl-state-intxt"><span class="gl-state-line">
             <span>Hello, we’re EGGWORM.</span>
@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// variables
 	const imgs = document.querySelectorAll(".gl-state-copy");
 	const imgWidth = imgs[0].offsetWidth;
+	const whiteBg = document.querySelector(".gl-state-white");
+	const texts = document.querySelectorAll(".gl-state-intxt");
 	let currentX = 0;
 	var timer = null;
 
@@ -53,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const defaultSpeed = 1; // 0.5 -> 5
 	let currentSpeedImg = 0.8;
 	let delayX = 0; // 0 - 40
+	let hasRun = false;
 
 	// main functions
 	function movementFrame() {
@@ -127,6 +130,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		}, 1);
 	}
 
+	function isInView(element) {
+		const rect = element.getBoundingClientRect() ;
+		return (
+			rect.top * 1.5 <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.bottom * 1.5 >= 0
+		);
+	}
+
+	function fadeInMoving() {
+		let y = 0;
+		const fadeInInterval = setInterval(() => {
+			if (y === 101) {
+				clearInterval(fadeInInterval)
+			} else {
+				y += 1;
+			}
+			whiteBg.style.transform = `translate(0%, ${y}%) matrix(1, 0, 0, 1, 0, 0)`;
+		}, 5)
+	}
+
 	window.addEventListener(
 		"scroll",
 		function () {
@@ -134,9 +157,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			if (scrollAmount !== 0) {
 				direction = -scrollAmount / Math.abs(scrollAmount);
 			}
-
+			if (!hasRun && isInView(whiteBg)) {
+				hasRun = true;
+				fadeInMoving();
+				texts.forEach(text => {
+					text.classList.add('fadeInBottom')
+				})
+			}
 			const newSpeed = mapValue(Math.abs(scrollAmount), 1, 100, 2, 5);
-			delayX = mapValue(Math.abs(scrollAmount), 1, 100, 25, 40) * -direction;
+			delayX = mapValue(Math.abs(scrollAmount), 20, 100, 40, 60) * -direction;
 			currentSpeedImg = newSpeed; // img goes faster
 
 			if (timer !== null) {
