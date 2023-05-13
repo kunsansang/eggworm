@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener("DOMContentLoaded", function (event) {
 	const videoIntroduce = document.createElement("div");
 	videoIntroduce.classList.add("container-fluid");
 	videoIntroduce.classList.add("my-container");
@@ -14,4 +14,4 @@
   </div>
   `;
 	document.body.appendChild(videoIntroduce);
-})();
+});
