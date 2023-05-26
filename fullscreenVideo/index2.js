@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	const videoIntroduce = document.createElement("div");
-	videoIntroduce.className = "container-fluid my-container h-100";
+	videoIntroduce.className = "container-fluid my-container h-100 x";
 	videoIntroduce.innerHTML = `
 	<div class="row h-100">
 	<div class="col-12">

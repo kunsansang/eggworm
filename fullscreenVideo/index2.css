@@ -8,5 +8,6 @@
   }
 
   .x {
-    min-height: 100vh;
+    padding: 8% 0;
+    background: black;
   }
