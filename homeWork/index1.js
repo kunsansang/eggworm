@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	videoIntroduce.className = "home-works";
 	videoIntroduce.innerHTML = `
  <header class="home-works-header active">
-        <h2 class="home-works-title">WORKS</h2> <a href="/works/" class="home-works-all-link arrow-button active"><span
+        <h2 class="home-works-title">WORKS</h2> <a href="https://www.eggworm.jp/en/our-work" class="home-works-all-link arrow-button active"><span
             class="text">View All</span> <span class="arrow"></span> <span class="line"></span></a>
       </header>
       <div class="home-works-list">
@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
           </div>
         </div>
       </div>
-      <footer class="home-works-footer"><a href="/works/" class="home-works-footer__link">View All<span></span></a>
+      <footer class="home-works-footer"><a href="https://www.eggworm.jp/en/our-work" class="home-works-footer__link">View All<span></span></a>
       </footer>
   `;
-	$("body").prepend(videoIntroduce);
+	$("body").append(videoIntroduce);
 });
