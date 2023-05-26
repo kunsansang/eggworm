@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   </div>
   `;
-	document.body.appendChild(videoIntroduce);
+	$("body").prepend(videoIntroduce);
 
 	const iframe = document.getElementById("headerVimeoID");
 	const playerHeader = new Vimeo.Player(iframe);
