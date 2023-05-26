@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         </p>
       </div>
   `;
-	document.body.appendChild(reelSection);
+	$("body").prepend(reelSection);
 
 	// variables
 	const imgs = document.querySelectorAll(".gl-state-copy");
@@ -131,23 +131,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 
 	function isInView(element) {
-		const rect = element.getBoundingClientRect() ;
-		return (
-			rect.top * 1.5 <= (window.innerHeight || document.documentElement.clientHeight) &&
-			rect.bottom * 1.5 >= 0
-		);
+		const rect = element.getBoundingClientRect();
+		return rect.top * 1.5 <= (window.innerHeight || document.documentElement.clientHeight) && rect.bottom * 1.5 >= 0;
 	}
 
 	function fadeInMoving() {
 		let y = 0;
 		const fadeInInterval = setInterval(() => {
 			if (y === 101) {
-				clearInterval(fadeInInterval)
+				clearInterval(fadeInInterval);
 			} else {
 				y += 1;
 			}
 			whiteBg.style.transform = `translate(0%, ${y}%) matrix(1, 0, 0, 1, 0, 0)`;
-		}, 5)
+		}, 5);
 	}
 
 	window.addEventListener(
@@ -160,9 +157,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			if (!hasRun && isInView(whiteBg)) {
 				hasRun = true;
 				fadeInMoving();
-				texts.forEach(text => {
-					text.classList.add('fadeInBottom')
-				})
+				texts.forEach((text) => {
+					text.classList.add("fadeInBottom");
+				});
 			}
 			const newSpeed = mapValue(Math.abs(scrollAmount), 1, 100, 2, 5);
 			delayX = mapValue(Math.abs(scrollAmount), 20, 100, 40, 60) * -direction;

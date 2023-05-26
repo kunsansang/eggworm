@@ -1,3 +1,4 @@
+// improve on mobile
 let isPlaying = false;
 let isMouseOnPlayArea = false;
 let hasPlayed = false;
@@ -21,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		</div>
   </div>
   `;
-	document.body.appendChild(videoIntroduce);
+	$("body").prepend(videoIntroduce);
+
 	let mousePosX = 100,
 		mousePosY = 100,
 		mouseCircle = document.getElementById("active-circle");
