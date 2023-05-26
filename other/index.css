@@ -1,0 +1,368 @@
+  @keyframes line {
+    0% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+
+    49% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+  }
+
+  @-webkit-keyframes line2 {
+    0% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+
+    49% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+  }
+
+  @keyframes line2 {
+    0% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+
+    49% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%)
+    }
+  }
+
+  @-webkit-keyframes arrow-hover {
+    0% {
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%)
+    }
+
+    49% {
+      -webkit-transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%)
+    }
+  }
+
+  @keyframes arrow-hover {
+    0% {
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%)
+    }
+
+    49% {
+      -webkit-transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%)
+    }
+  }
+
+  @-webkit-keyframes blank {
+    0% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%)
+    }
+
+    49% {
+      -webkit-transform: translate(100%, -100%);
+      transform: translate(100%, -100%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translate(-100%, 100%);
+      transform: translate(-100%, 100%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%)
+    }
+  }
+
+  @keyframes blank {
+    0% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%)
+    }
+
+    49% {
+      -webkit-transform: translate(100%, -100%);
+      transform: translate(100%, -100%);
+      visibility: hidden
+    }
+
+    50% {
+      -webkit-transform: translate(-100%, 100%);
+      transform: translate(-100%, 100%);
+      visibility: hidden
+    }
+
+    52% {
+      visibility: visible
+    }
+
+    100% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%)
+    }
+  }
+
+  .home-other {
+    background-color: #f6f6f6;
+    font-size: 0
+  }
+
+  .home-other-item {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden
+  }
+
+  @media (max-width: 768px) {
+    .home-other-item {
+      width: 100%
+    }
+  }
+
+  .home-other-item a {
+    cursor: pointer
+  }
+
+  .home-other-item__image {
+    position: relative
+  }
+
+  .home-other-item__image:before {
+    content: "";
+    display: block;
+    padding-bottom: 72.2222222222222%;
+    width: 100%
+  }
+
+  .home-other-item__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    -o-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0
+  }
+
+  .home-other-item__image img.loaded {
+    opacity: 1
+  }
+
+  .home-other-item__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0
+  }
+
+  @media (min-width: 769px) {
+    .home-other-item:hover .home-other-item__cover {
+      opacity: 1
+    }
+
+    .home-other-item:hover .home-other-item__image img {
+      -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      transform: scale(1.02)
+    }
+
+    .home-other-item:hover .home-other-item__title {
+      color: #999
+    }
+
+    .home-other-item:hover .home-other-item__title span {
+      opacity: 0.3
+    }
+
+    .home-other-item:hover .home-other-item__title span:after {
+      -webkit-animation: line 0.35s ease-in-out;
+      animation: line 0.35s ease-in-out
+    }
+  }
+
+  .home-other-item img {
+    width: 100%;
+    height: auto;
+    display: block
+  }
+
+  .home-other-item__title {
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    color: #000;
+    font-family: neue-haas-grotesk-text, 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    font-size: 18px;
+    padding: 22px 70px 22px 32px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    -webkit-transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: color 0.15s cubic-bezier(0.215, 0.61, 0.355, 1)
+  }
+
+  @media (max-width: 768px) {
+    .home-other-item__title {
+      padding: 4vw 14.13333vw 4vw 5.33333vw;
+      font-size: 3.46667vw;
+      bottom: 4.66667vw;
+      left: 4.66667vw;
+      border-radius: 12vw
+    }
+  }
+
+  .home-other-item__title span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+    -webkit-transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1)
+  }
+
+  @media (max-width: 768px) {
+    .home-other-item__title span {
+      width: 2.4vw;
+      height: 2.4vw;
+      right: 5.33333vw
+    }
+  }
+
+  .home-other-item__title span:after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("https://goinc.co.jp/assets/images/home/works-arrow-black.svg") top left no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0
+  }
+
+  @media (max-width: 768px) {
+    .home-other-item__title span:after {
+      width: 2.4vw;
+      height: 2.4vw
+    }
+  }
