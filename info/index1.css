@@ -223,7 +223,7 @@
   display: block;
   width: 11px;
   height: 17px;
-  background: url(../images/home/map-icon.svg) top left no-repeat;
+  background: url("https://goinc.co.jp/assets/images/home/works-arrow-black.svg") top left no-repeat;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -369,7 +369,7 @@
   display: block;
   width: 14px;
   height: 14px;
-  background: url(../images/home/works-arrow-black.svg) top left no-repeat;
+  background: url("https://goinc.co.jp/assets/images/home/works-arrow-black.svg") top left no-repeat;
   background-size: contain;
   position: absolute;
   top: 0;

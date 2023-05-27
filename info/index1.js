@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <p class="home-info__text">外苑東通り沿いの階段か、ローソン横の<br>
           エレベータで2Fにお上がりください</p>
       </div>
-      <div class="home-contact"><a href="/contact/" class="" title="CONTACT">CONTACT<div class="arrow"><span></span></div>
+      <div class="home-contact"><a href="https://www.eggworm.jp/en/home#about" class="" title="CONTACT">CONTACT<div class="arrow"><span></span></div>
           </a></div>
   `;
 	$("body").append(videoIntroduce);
