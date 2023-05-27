@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         </a></div>
       <div class="home-other-item"><a href="/contact/?joinus=1" class="">
           <div class="home-other-item__image"><img
-              data-src="https://raw.githubusercontent.com/kunsansang/eggworm/main/other/joinUs.png"
-              src="https://raw.githubusercontent.com/kunsansang/eggworm/main/other/joinUs.png" lazy="loaded"
+              data-src="https://raw.githubusercontent.com/kunsansang/eggworm/main/other/joinUs.jpg"
+              src="https://raw.githubusercontent.com/kunsansang/eggworm/main/other/joinUs.jpg" lazy="loaded"
               class="loaded"></div>
           <div class="home-other-item__cover"></div>
           <div class="home-other-item__title">Join us<span></span></div>
