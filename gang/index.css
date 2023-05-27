@@ -1,0 +1,154 @@
+.home-gear {
+  background-color: #fff;
+  display: block
+}
+
+@media (min-width: 769px) {
+  .home-gear {
+    padding: 138px 0 0
+  }
+}
+
+@media (max-width: 768px) {
+  .home-gear {
+    padding: 12vw 4.66667vw 0vw 4.66667vw
+  }
+}
+
+.home-gear__image {
+  position: relative;
+  overflow: hidden
+}
+
+.home-gear__image:before {
+  content: "";
+  display: block;
+  padding-bottom: 19.444444444444444%;
+  width: 100%
+}
+
+@media (max-width: 768px) {
+  .home-gear__image:before {
+    padding-bottom: 26.470588235294118%
+  }
+}
+
+.home-gear__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0
+}
+
+.home-gear__image img.loaded {
+  opacity: 1
+}
+
+.home-gear a {
+  display: block;
+  width: 100%;
+  position: relative
+}
+
+@media (min-width: 1151px) {
+  .home-gear a {
+    width: 1151px;
+    margin: 0 auto
+  }
+}
+
+@media (max-width: 768px) {
+  .home-gear a {
+    max-width: 100%
+  }
+}
+
+@media (min-width: 769px) {
+  .home-gear a:hover {
+    color: #999
+  }
+
+  .home-gear a:hover .home-gear__image img {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02)
+  }
+
+  .home-gear a:hover span {
+    opacity: 0.3
+  }
+
+  .home-gear a:hover span:after {
+    -webkit-animation: line 0.35s ease-in-out;
+    animation: line 0.35s ease-in-out
+  }
+}
+
+.home-gear img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1), -webkit-transform 1s cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+.home-gear .arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 64px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+@media (max-width: 768px) {
+  .home-gear .arrow {
+    display: none
+  }
+}
+
+.home-gear .arrow span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+.home-gear .arrow span:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("https://goinc.co.jp/assets/images/home/works-arrow-black.svg") top left no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0
+}
