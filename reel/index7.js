@@ -18,23 +18,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
             <span>Hello, we’re EGGWORM.</span>
         </p>
         <p class="gl-state-intxt"><span class="gl-state-line">
-            <span>As a results-driven brand experience company, we create empowering encounters that invigorate our
-              partners' brand narratives.
+            <span>
+						As a results-driven Experience Design company, we create empowering encounters that invigorate our partners' brand narratives.
             </span>
         </p>
         <p class="gl-state-intxt"><span class="gl-state-line">
-            <span>These dynamic experiences encompass the physical, digital, and the seamless
-              fusion of both realms in today's ever-evolving world. We're dedicated to helping
-              our partners adapt and flourish in the face of change. Change presents both
-              challenges and opportunities for businesses, and it all begins with a visionary idea -
-              one that we're committed to nurturing from the very beginning until it becomes a
-              reality.
+            <span>
+							These dynamic experiences encompass the physical, digital, and the seamless fusion of
+						both realms in today's ever-evolving world. We're dedicated to helping our partners
+						adapt and flourish in the face of change. Change presents both challenges and
+						opportunities for businesses, and it all begins with a visionary idea - one that we're
+						committed to nurturing from the very beginning until it becomes a reality.
             </span>
         </p>
         <p class="gl-state-intxt"><span class="gl-state-line">
-            <span>Navigating the Japanese market can be a daunting endeavor, but at EGGWORM,
-              we embrace challenges as opportunities and take pride in turning the seemingly
-              impossible into reality.
+            <span>
+						We believe in mastering the art of harmonizing work and play for an epic life adventure,
+because at EGGWORM, we embrace challenges as opportunities and take pride in
+turning the seemingly impossible into reality while navigating the Japanese market.
             </span>
         </p>
       </div>
